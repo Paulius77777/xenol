@@ -5,3 +5,74 @@
 .bg-grey {
     background-color: var(--color-grey);
 }
+
+h2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    
+}
+
+    h2::before {
+        content: '';
+        display: inline-block;
+        width: 50px;
+        height: 4px;
+        margin: -60px calc(50% - 25px);
+        background-color: var(--color-primary-light);
+    }
+    H2::after {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 3px;
+        margin: 12px calc(50% - 40px);
+        background-color: var(--color-primary-light);
+    }
+
+    h2.up {
+        text-transform: uppercase;
+    }
+
+    .service {
+        display: inline-block;
+        width: calc(100% / 3);
+        float: left;
+        text-align: center;
+        padding: 20px;
+    }
+
+        .service > i {
+            display: inline-block;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .service > h3 {
+            display: inline-block;
+            width: 100%;
+            font-size: 20px;
+            line-height: 20px;
+            margin: 10px 0;
+
+        }
+        .service > p {
+            display: inline-block;
+            width: 100%;
+            font-size: 15px;
+            line-height: 15px;
+        }
+        .btn {
+            display: inline-block;
+            width: 170px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            margin: 60px calc(50% - 85px) -18px;
+            background-color: var(--color-primary-dark);
+            border-radius: 25px;
+            color: white;
+            padding: 11px 0 0 0;
+            text-decoration: none;
+        }
